@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Git Cheatsheet</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Git Cheatsheet</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Basic commands</h2>
+			<ul>
+				<li><code>git init</code>: Initialize a new Git repository.</li>
+				<li><code>git clone [url]</code>: Clone a remote Git repository to your local machine.</li>
+				<li><code>git add [filename]</code>: Add changes to the staging area.</li>
+				<li><code>git commit -m "[message]"</code>: Commit changes to the repository with a message describing the changes.</li>
+				<li><code>git status</code>: Show the status of the repository, including files that have been modified or added.</li>
+				<li><code>git diff</code>: Show the differences between the working directory and the staging area.</li>
+				<li><code>git log</code>: Show the commit history of the repository.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Branching and merging</h2>
+			<ul>
+				<li><code>git branch</code>: List all branches in the repository.</li>
+				<li><code>git branch [branch_name]</code>: Create a new branch with the given name.</li>
+				<li><code>git checkout [branch_name]</code>: Switch to the branch with the given name.</li>
+				<li><code>git merge [branch_name]</code>: Merge the changes from the specified branch into the current branch.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Remote repositories</h2>
+			<ul>
+				<li><code>git remote</code>: List all remote repositories.</li>
+				<li><code>git remote add [name] [url]</code>: Add a new remote repository with the specified name and URL.</li>
+				<li><code>git push [remote] [branch]</code>: Push the specified branch to the remote repository.</li>
+				<li><code>git pull [remote] [branch]</code>: Pull the specified branch from the remote repository.</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Undoing changes</h2>
+			<ul>
+				<li><code>git reset [filename]</code>: Unstage changes from the staging area.</li>
+				<li><code>git checkout [filename]</code>: Discard changes to the specified file in the working directory.</li>
+				<li><code>git revert [commit_hash]</code>: Revert a specific commit, creating a new commit that undoes the changes in the original commit.</li>
+				<li><code>git reset --hard [commit_hash]</code>: Reset the repository to a specific commit, discarding any changes made after that commit.</li>
+			</ul>
+		</section>
+	</main>
+</body>
+</html>
